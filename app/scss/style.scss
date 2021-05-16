@@ -136,6 +136,104 @@
   &__link {
     font-size: 15px;
     @extend %r-m;
+    color: $blue;
+  }
+}
+.footer {
+  &__content {
+    padding-bottom: 77px;
+    border-bottom: 1px solid #a3bbc8;
+  }
+  &__content-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content-address {
+    width: 191px;
+    color: $boulder;
+    @extend %r-r;
+    font-size: 14px;
+  }
+  &__content-address__name {
+    padding: 21px 0 7px;
+    line-height: 1.71;
+  }
+  &__content-address__phone {
+    line-height: 2.29;
+    padding-bottom: 9px;
+  }
+  &__content-phone,
+  &__content-email {
+    color: $boulder;
+  }
+  &__content-subtitle {
+    text-transform: uppercase;
+  }
+  &__content-box {
+    padding-top: 16px;
+    width: 200px;
+  }
+  &__content-link {
+    color: $boulder;
+    line-height: 2.29;
+  }
+  &__content-descr {
+    padding-top: 16px;
+    width: 274px;
+  }
+  &__content-text {
+    color: $boulder;
+    padding-bottom: 32px;
+    width: 240px;
+  }
+  &__content-input {
+    width: 170px;
+    height: 38px;
+    background-color: rgba(#fcd7b6, 0.2);
+    border: none;
+    padding: 14px 16px;
+    font-size: 12px;
+    @extend %d-r;
+    color: $cello;
+  }
+  &__content-btn {
+    background-color: #a3bbc8;
+    width: 100px;
+    height: 38px;
+    line-height: 1.5;
+    color: $white;
+    @extend %d-r;
+    margin-left: -4px;
+  }
+  &__copy-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0 17px;
+  }
+  &__copy-text {
+    line-height: 2.29;
+    color: $boulder;
+  }
+  &__copy-breadcrumbs {
+    display: flex;
+  }
+  &__copy-item + .footer__copy-item {
+    margin-left: 35px;
+  }
+  &__copy-item {
+    position: relative;
+    &::after {
+      content: "|";
+      position: absolute;
+      right: -20px;
+    }
+    &:last-child::after {
+      display: none;
+    }
+  }
+  &__copy-link {
+    line-height: 2.29;
+    color: $boulder;
   }
 }
 @import "media";

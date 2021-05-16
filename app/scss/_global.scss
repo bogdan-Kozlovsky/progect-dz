@@ -1,3 +1,8 @@
+body {
+  @extend %r-r;
+  font-size: 14px;
+  line-height: 1.88;
+}
 .burger {
   width: 30px;
   height: 20px;
@@ -46,4 +51,17 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.title {
+  font-size: 16px;
+  color: $port;
+  line-height: 1.31;
+  @extend %d-b;
+  padding-bottom: 14px;
+  text-transform: uppercase;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
