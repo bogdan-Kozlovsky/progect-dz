@@ -1,0 +1,141 @@
+@import "vars";
+@import "global";
+@import "reset";
+@import "fonts";
+
+.header {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 51px 0 54px;
+  }
+  &__navigation {
+    display: flex;
+    align-items: center;
+  }
+  &__navigation-search {
+    width: 51px;
+    height: 51px;
+    background-color: rgba(#a3bbc8, 0.2);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-right: 21px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 17px;
+      height: 18px;
+      background-image: url(../images/search.svg);
+      background-repeat: no-repeat;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__navigation-box {
+    width: 178px;
+    height: 51px;
+    background-color: #fcd7b6;
+    border-radius: 29px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 32px;
+      background-color: #fff;
+      left: 50%;
+      top: 10px;
+    }
+  }
+  &__navigation-likes {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/like.svg);
+      background-repeat: no-repeat;
+      width: 19px;
+      height: 17px;
+      top: 20px;
+      left: 41px;
+    }
+  }
+  &__navigation-market {
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/market.svg);
+      background-repeat: no-repeat;
+      width: 19px;
+      height: 17px;
+      right: 42px;
+      top: 18px;
+    }
+  }
+  &__navigation-btn {
+    width: 51px;
+    height: 52px;
+    background-color: #a3bbc8;
+    display: block;
+    margin-left: 18px;
+    border-radius: 50%;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/btn.svg);
+      background-repeat: no-repeat;
+      width: 21px;
+      height: 21px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__navigation-num--likes {
+    font-size: 10px;
+    color: #243f4d;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 53px;
+    padding: 3px;
+    z-index: 1;
+  }
+  &__navigation-num--market {
+    font-size: 10px;
+    color: #243f4d;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 13px;
+    right: 33px;
+    padding: 3px;
+    z-index: 1;
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__item + .menu__item {
+    margin-left: 30px;
+  }
+  &__link {
+    font-size: 15px;
+    @extend %r-m;
+  }
+}
+@import "media";
