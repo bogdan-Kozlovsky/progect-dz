@@ -1,4 +1,5 @@
 @import "reset";
+@import "libs";
 @import "global";
 @import "vars";
 @import "fonts";
@@ -7,11 +8,12 @@
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 15px;
+  width: 100%;
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 51px 0 54px;
+    padding: 51px 0 44px;
   }
   &__navigation {
     display: flex;
@@ -108,7 +110,6 @@
     position: absolute;
     top: 15px;
     left: 53px;
-    padding: 3px;
     z-index: 1;
   }
   &__navigation-num--market {
@@ -122,7 +123,6 @@
     position: absolute;
     top: 13px;
     right: 33px;
-    padding: 3px;
     z-index: 1;
   }
 }
@@ -137,6 +137,87 @@
     font-size: 15px;
     @extend %r-m;
     color: $blue;
+  }
+}
+.top__slider {
+  background-image: url(../images/slider__top-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 820px;
+  &-item {
+    padding-top: 217px;
+  }
+  &-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-content {
+    width: 400px;
+  }
+  &-title {
+    font-size: 68px;
+    @extend %r-m;
+    color: $cello;
+    line-height: 70px;
+    margin-bottom: 26px;
+  }
+  &-text {
+    margin-bottom: 30px;
+    width: 360px;
+    font-size: 18px;
+    color: $blue;
+  }
+  &-btn {
+    width: 200px;
+    height: 60px;
+    background-color: $apricode;
+    display: block;
+    font-size: 15px;
+    line-height: 12px;
+    @extend %r-m;
+    color: $white;
+    padding: 25px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/slider-icons.svg);
+      width: 22px;
+      height: 9px;
+      top: 24px;
+      right: 18px;
+    }
+  }
+  &-images {
+    width: 640px;
+    height: 264px;
+    object-fit: cover;
+    margin-top: 87px;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding-top: 176px;
+    li {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: rgba(#ffffff, 0.3);
+      margin: 0 6px;
+
+      button {
+        border: none;
+        background-color: transparent;
+        font-size: 11px;
+        line-height: 28px;
+        padding-left: 11px;
+        color: $dianne;
+        cursor: pointer;
+      }
+      &.slick-active {
+        background-color: #fff;
+      }
+    }
   }
 }
 .footer {
@@ -196,6 +277,11 @@
     font-size: 12px;
     @extend %d-r;
     color: $cello;
+    &::placeholder {
+      color: $cello;
+      font-size: 12px;
+      @extend %d-r;
+    }
   }
   &__content-btn {
     background-color: #a3bbc8;
