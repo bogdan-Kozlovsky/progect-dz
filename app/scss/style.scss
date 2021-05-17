@@ -1,6 +1,6 @@
-@import "vars";
-@import "global";
 @import "reset";
+@import "global";
+@import "vars";
 @import "fonts";
 
 .header {
@@ -30,7 +30,7 @@
       position: absolute;
       width: 17px;
       height: 18px;
-      background-image: url(../images/search.svg);
+      background-image: url(../images/icons/search.svg);
       background-repeat: no-repeat;
       top: 50%;
       left: 50%;
@@ -57,7 +57,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url(../images/like.svg);
+      background-image: url(../images/icons/like.svg);
       background-repeat: no-repeat;
       width: 19px;
       height: 17px;
@@ -69,7 +69,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url(../images/market.svg);
+      background-image: url(../images/icons/market.svg);
       background-repeat: no-repeat;
       width: 19px;
       height: 17px;
@@ -88,7 +88,7 @@
     &::after {
       content: "";
       position: absolute;
-      background-image: url(../images/btn.svg);
+      background-image: url(../images/icons/btn.svg);
       background-repeat: no-repeat;
       width: 21px;
       height: 21px;
@@ -113,7 +113,7 @@
   }
   &__navigation-num--market {
     font-size: 10px;
-    color: #243f4d;
+    color: $dianne;
     text-align: center;
     width: 16px;
     height: 16px;
@@ -140,6 +140,7 @@
   }
 }
 .footer {
+  flex: 0 0 auto;
   &__content {
     padding-bottom: 77px;
     border-bottom: 1px solid #a3bbc8;
@@ -204,6 +205,7 @@
     color: $white;
     @extend %d-r;
     margin-left: -4px;
+    cursor: pointer;
   }
   &__copy-inner {
     display: flex;
