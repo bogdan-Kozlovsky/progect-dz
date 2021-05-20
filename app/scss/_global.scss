@@ -5,9 +5,10 @@ body {
 body {
   @extend %r-r;
   font-size: 14px;
-  line-height: 1.88;
+  line-height: 30px;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 .main {
   flex-grow: 1;
@@ -62,11 +63,7 @@ body {
   padding: 0 15px;
 }
 .title {
-  font-size: 16px;
-  // color: $gore;
-  line-height: 1.31;
+  font-size: 36px;
   @extend %d-b;
-  padding-bottom: 14px;
-  text-transform: uppercase;
-  color: #1f2044;
+  color: #1a1a1a;
 }
