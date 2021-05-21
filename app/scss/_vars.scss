@@ -36,3 +36,11 @@ $scorpion: #585858;
 $title: #1a1a1a;
 $btn: #8b8b8b;
 $dianne: #243f4d;
+$mine: #262626;
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
