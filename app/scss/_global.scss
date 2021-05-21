@@ -26,14 +26,14 @@ body {
     width: 100%;
     height: 2px;
     top: 9px;
-    background-color: #ffffff;
+    background-color: #000;
     transition: all 0.5s ease;
   }
   &::after,
   &::before {
     content: "";
     position: absolute;
-    background-color: #ffffff;
+    background-color: #000;
     width: 100%;
     height: 2px;
     left: 0;
