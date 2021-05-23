@@ -402,8 +402,9 @@
     padding: 0 15px;
   }
   &__inner {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
   }
   &__item {
     min-height: 390px;
@@ -484,13 +485,13 @@
     border: none;
   }
   &__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 40px 30px;
   }
   &__item {
     position: relative;
-    margin-bottom: 22px;
   }
   &__content {
     width: 169px;
@@ -752,7 +753,6 @@
 }
 .advantages,
 .info,
-.new-design,
 .popup,
 .articles,
 .partners {
