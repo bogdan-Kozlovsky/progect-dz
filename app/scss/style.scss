@@ -751,7 +751,7 @@
     color: #000;
   }
 }
-
+// top
 .top {
   padding-bottom: 50px;
   &__inner {
@@ -770,6 +770,8 @@
     margin-bottom: 10px;
   }
 }
+// top
+// breadcrumbs
 .breadcrumbs {
   &__list {
     display: flex;
@@ -795,6 +797,8 @@
     color: #000;
   }
 }
+// breadcrumbs
+// modal
 .modal {
   max-width: 470px;
   width: 100%;
@@ -870,4 +874,242 @@
     align-items: flex-end;
   }
 }
+// modal
+// mission
+.mission {
+  margin-bottom: 128px;
+  &__img {
+    width: 570px;
+    height: 675.6px;
+    object-fit: cover;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__box {
+    max-width: 550px;
+    width: 100%;
+    margin-left: 46px;
+    padding-top: 103px;
+  }
+  &__content-years {
+    display: flex;
+    align-items: center;
+    margin-bottom: 53px;
+  }
+  &__content-num {
+    font-size: 140px;
+    line-height: 32px;
+    color: $apricode;
+    margin-right: 29px;
+    @extend %r-b;
+  }
+  &__content-text {
+    width: 83px;
+    font-size: 16px;
+  }
+  &__title {
+    margin-bottom: 41px;
+  }
+  &__text {
+    padding-bottom: 57px;
+    margin-bottom: 39px;
+    border-bottom: 3px solid rgba(#09316f, 0.1);
+  }
+  &__items {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 37px;
+  }
+  &__item {
+    padding-left: 53px;
+    position: relative;
+  }
+  &__item--one::before,
+  &__item--two::before,
+  &__item--three::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+  &__item--one::before {
+    background-image: url(../images/icons/mission-icons-1.svg);
+    width: 37px;
+    height: 38px;
+  }
+  &__item--two::before {
+    background-image: url(../images/icons/mission-icons-2.svg);
+    width: 44px;
+    height: 40px;
+  }
+  &__item--three::before {
+    background-image: url(../images/icons/mission-icons-3.svg);
+    width: 43px;
+    height: 42px;
+  }
+  &__item--one {
+    padding-right: 24px;
+  }
+  &__item--two {
+    padding-right: 24px;
+  }
+  &__item--one::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 1px;
+    height: 81px;
+    background-color: rgba(#09316f, 0.2);
+  }
+  &__item--two::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 1px;
+    height: 81px;
+    background-color: rgba(#09316f, 0.2);
+  }
+  &__item-num {
+    font-size: 36px;
+    color: $dianne;
+    @extend %d-b;
+    margin-bottom: 13px;
+  }
+  &__item-descr {
+    font-size: 16px;
+    @extend %d-r;
+    color: #4c4c4c;
+  }
+}
+// mission
+// achievements
+.achievements {
+  background-color: #fcd7b6;
+  padding: 96px 0 43px;
+  margin-bottom: 128px;
+  text-align: center;
+  color: $dianne;
+  @extend %d-b;
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__num {
+    font-size: 36px;
+    margin: 23px 0 27px;
+    display: block;
+  }
+  &__text {
+    font-size: 18px;
+  }
+}
+// achievements
+// team
+.team {
+  margin-bottom: 119px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    width: 305px;
+    margin-right: 98px;
+    flex: none;
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__text {
+    font-size: 16px;
+    color: $dianne;
+    margin-bottom: 50px;
+    @extend %r-r;
+  }
+  &__btn {
+    font-size: 15px;
+    @extend %r-m;
+    color: $white;
+    padding: 19px 60px 19px 18px;
+    border-radius: 5px;
+    background-color: #a3bbc8;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/team-icons.svg);
+      width: 15px;
+      height: 11px;
+      top: 22px;
+      right: 11px;
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__gallery-item {
+    margin-bottom: 35px;
+  }
+  &__gallery-item:nth-child(odd) {
+    margin-right: 27px;
+  }
+  &__gallery-img {
+    width: 370px;
+    height: 320px;
+    object-fit: cover;
+  }
+  &__gallery-info {
+    width: 325px;
+    min-height: 111px;
+    box-shadow: 0px 6px 57px 0 rgba(37, 37, 37, 0.05);
+    background-color: #ffffff;
+    padding: 24px 13px 28px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -68px;
+  }
+  &__gallery-box {
+    width: 170px;
+  }
+  &__gallery-title {
+    font-size: 22px;
+    line-height: 26px;
+    color: $blue;
+    @extend %d-b;
+    margin-bottom: 4px;
+  }
+  &__gallery-text {
+    font-size: 16px;
+    line-height: 30px;
+    @extend %r-r;
+    color: $comet;
+  }
+  &__gallery-social {
+    display: flex;
+  }
+  &__gallery-link {
+    width: 41px;
+    height: 41px;
+    background-color: #f6f6f6;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+  }
+  &__gallery-link {
+    img {
+    }
+  }
+}
+// team
 @import "media";
