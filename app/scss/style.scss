@@ -492,6 +492,7 @@
   }
   &__item {
     position: relative;
+    background-color: #f8f8f8;
   }
   &__content {
     width: 169px;
@@ -750,12 +751,5 @@
     line-height: 2.29;
     color: $boulder;
   }
-}
-.advantages,
-.info,
-.popup,
-.articles,
-.partners {
-  display: none;
 }
 @import "media";
