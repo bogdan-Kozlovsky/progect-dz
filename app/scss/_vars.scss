@@ -21,6 +21,10 @@
   font-family: "Rubik-Medium", sans-serif;
   font-weight: 500;
 }
+%r-b {
+  font-family: "Rubik-Bold", sans-serif;
+  font-weight: 700;
+}
 // rubik
 
 // color
@@ -37,6 +41,7 @@ $title: #1a1a1a;
 $btn: #8b8b8b;
 $dianne: #243f4d;
 $mine: #262626;
+$comet: #565872;
 
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});

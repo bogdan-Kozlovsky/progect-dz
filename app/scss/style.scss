@@ -133,6 +133,10 @@
     @extend %r-m;
     color: $blue;
   }
+  &__link--active {
+    text-decoration: underline;
+    color: #000;
+  }
 }
 .top__slider {
   background-image: url(../images/slider__top-bg.jpg);
@@ -605,12 +609,34 @@
     @extend %r-r;
     color: #222933;
     margin-right: 31px;
+    position: relative;
+    padding-left: 19px;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/date.svg);
+      top: 6px;
+      left: 0;
+      width: 14px;
+      height: 14px;
+    }
   }
   &__item-box-admin {
     font-size: 12px;
     @extend %r-r;
     color: #222933;
     text-transform: uppercase;
+    position: relative;
+    padding-left: 17px;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/user.svg);
+      top: 7px;
+      left: 0;
+      width: 14px;
+      height: 14px;
+    }
   }
 }
 // articles
@@ -747,7 +773,418 @@
     color: $boulder;
   }
 }
-.main {
-  display: none;
+.footer--active {
+  text-decoration: underline;
+  @extend %r-m;
+  color: #000;
 }
+// top
+.top {
+  padding-bottom: 50px;
+  &__box {
+    margin-bottom: 100px;
+  }
+  &__inner {
+    background-color: rgba(#a3bbc8, 0.2);
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 24px;
+    @extend %r-r;
+    color: #222933;
+    margin-bottom: 10px;
+  }
+}
+// top
+// breadcrumbs
+.breadcrumbs {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin: 0 5px;
+    &::after {
+      content: "/";
+      padding-left: 10px;
+    }
+    &:last-child::after {
+      display: none;
+    }
+  }
+  &__link {
+    font-size: 14px;
+    @extend %r-r;
+    line-height: 1.71;
+    color: rgba(34, 41, 51, 0.6);
+  }
+  &__link--active {
+    @extend %r-m;
+    color: #000;
+  }
+}
+// breadcrumbs
+// modal
+.modal {
+  max-width: 470px;
+  width: 100%;
+  margin: 0 auto;
+  &-form {
+    margin-bottom: 120px;
+  }
+  &-form__text {
+    font-size: 14px;
+    color: $blue;
+    margin-bottom: 15px;
+    @extend %r-r;
+  }
+  &-form__input {
+    width: 100%;
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    border: solid 2px #f6f6f6;
+  }
+  &-form__box {
+    margin-bottom: 28px;
+  }
+  &-form__label-btn {
+    display: block;
+    width: 100%;
+    background-color: #a3bbc8;
+    text-align: center;
+    padding: 22px 0;
+    color: #fffefe;
+    font-size: 18px;
+    @extend %r-m;
+    margin: 37px 0 21px;
+  }
+  &-form__bo {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 23px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #f6f6f6;
+  }
+  &-form__problem,
+  &-form__problem-link {
+    color: $blue;
+    @extend %r-r;
+    font-size: 14px;
+  }
+  &__link {
+    color: $blue;
+    @extend %r-r;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  &__btn {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    @extend %r-m;
+    color: $dianne;
+    padding: 15px 0;
+    border: solid 2px #a3bbc8;
+  }
+}
+.partners-two {
+  background-color: rgba(#fcd7b6, 0.2);
+  padding: 82px 0 92px;
+  // min-height: 251px;
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+}
+// modal
+// mission
+.mission {
+  margin: 100px 0 128px;
+
+  &__img {
+    width: 570px;
+    height: 675.6px;
+    object-fit: cover;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__box {
+    max-width: 550px;
+    width: 100%;
+    margin-left: 46px;
+    padding-top: 103px;
+  }
+  &__content-years {
+    display: flex;
+    align-items: center;
+    margin-bottom: 53px;
+  }
+  &__content-num {
+    font-size: 140px;
+    line-height: 32px;
+    color: $apricode;
+    margin-right: 29px;
+    @extend %r-b;
+  }
+  &__content-text {
+    width: 83px;
+    font-size: 16px;
+  }
+  &__title {
+    margin-bottom: 41px;
+  }
+  &__text {
+    padding-bottom: 57px;
+    margin-bottom: 39px;
+    border-bottom: 3px solid rgba(#09316f, 0.1);
+  }
+  &__items {
+    display: flex;
+  }
+  &__item:not(:last-child) {
+    margin-right: 37px;
+  }
+  &__item {
+    padding-left: 53px;
+    position: relative;
+  }
+  &__item--one::before,
+  &__item--two::before,
+  &__item--three::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+  &__item--one::before {
+    background-image: url(../images/icons/mission-icons-1.svg);
+    width: 37px;
+    height: 38px;
+  }
+  &__item--two::before {
+    background-image: url(../images/icons/mission-icons-2.svg);
+    width: 44px;
+    height: 40px;
+  }
+  &__item--three::before {
+    background-image: url(../images/icons/mission-icons-3.svg);
+    width: 43px;
+    height: 42px;
+  }
+  &__item--one {
+    padding-right: 24px;
+  }
+  &__item--two {
+    padding-right: 24px;
+  }
+  &__item--one::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 1px;
+    height: 81px;
+    background-color: rgba(#09316f, 0.2);
+  }
+  &__item--two::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 0;
+    width: 1px;
+    height: 81px;
+    background-color: rgba(#09316f, 0.2);
+  }
+  &__item-num {
+    font-size: 36px;
+    color: $dianne;
+    @extend %d-b;
+    margin-bottom: 13px;
+  }
+  &__item-descr {
+    font-size: 16px;
+    @extend %d-r;
+    color: #4c4c4c;
+  }
+}
+// mission
+// achievements
+.achievements {
+  background-color: #fcd7b6;
+  padding: 96px 0 43px;
+  margin-bottom: 128px;
+  text-align: center;
+  color: $dianne;
+  @extend %d-b;
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__num {
+    font-size: 36px;
+    margin: 23px 0 27px;
+    display: block;
+  }
+  &__text {
+    font-size: 18px;
+  }
+}
+// achievements
+// team
+.team {
+  margin-bottom: 95px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    width: 305px;
+    margin-right: 98px;
+    flex: none;
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__text {
+    font-size: 16px;
+    color: $dianne;
+    margin-bottom: 50px;
+    @extend %r-r;
+  }
+  &__btn {
+    font-size: 15px;
+    @extend %r-m;
+    color: $white;
+    padding: 19px 60px 19px 18px;
+    border-radius: 5px;
+    background-color: #a3bbc8;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../images/icons/team-icons.svg);
+      width: 15px;
+      height: 11px;
+      top: 22px;
+      right: 11px;
+    }
+  }
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__gallery-item {
+    margin-bottom: 35px;
+  }
+  &__gallery-item:nth-child(odd) {
+    margin-right: 27px;
+  }
+  &__gallery-img {
+    width: 370px;
+    height: 320px;
+    object-fit: cover;
+  }
+  &__gallery-info {
+    width: 325px;
+    min-height: 111px;
+    box-shadow: 0px 6px 57px 0 rgba(37, 37, 37, 0.05);
+    background-color: #ffffff;
+    padding: 24px 13px 28px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -68px;
+  }
+  &__gallery-box {
+    width: 170px;
+  }
+  &__gallery-title {
+    font-size: 22px;
+    line-height: 26px;
+    color: $blue;
+    @extend %d-b;
+    margin-bottom: 4px;
+  }
+  &__gallery-text {
+    font-size: 16px;
+    line-height: 30px;
+    @extend %r-r;
+    color: $comet;
+  }
+  &__gallery-social {
+    display: flex;
+  }
+  &__gallery-link {
+    width: 41px;
+    height: 41px;
+    background-color: #f6f6f6;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    transition: all 0.5s;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+// team
+// personal-information
+.personal-information {
+  margin: 100px 0 105px;
+  &__types {
+    margin-bottom: 54px;
+  }
+  &__title {
+    font-size: 24px;
+    @extend %r-m;
+    color: $dianne;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+  &__list {
+    list-style: none;
+    counter-reset: my-counter;
+  }
+  &__item {
+    counter-increment: my-counter;
+    font-size: 16px;
+    @extend %r-r;
+    line-height: 30px;
+    margin-bottom: 21px;
+    position: relative;
+  }
+  &__item::before {
+    content: "0" counter(my-counter);
+    padding-right: 14px;
+  }
+  &__box {
+    margin-bottom: 43px;
+  }
+  &__subtitle {
+    font-size: 24px;
+    @extend %r-m;
+    color: $dianne;
+    line-height: 40px;
+    margin-bottom: 23px;
+  }
+  &__text {
+    font-size: 16px;
+    color: $dianne;
+    @extend %r-r;
+  }
+}
+// personal-information
 @import "media";
