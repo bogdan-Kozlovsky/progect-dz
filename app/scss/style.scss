@@ -412,24 +412,23 @@
     background-color: rgba(#fcd7b6, 0.4);
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
+    // flex-direction: column;
+    // justify-content: flex-start;
   }
   &__item-img {
-    position: absolute;
-    top: -102px;
-    left: 137px;
+    width: 233px;
+    height: 435px;
+    object-fit: cover;
+    margin-top: -114px;
+    margin-left: 137px;
   }
   &__item-content {
     width: 340px;
     color: $dianne;
-    margin-top: 100px;
-    margin-right: 141px;
+    margin: 81px 0 0 15px;
   }
   &__item-content--two {
-    margin-top: 83px;
-    margin-right: 99px;
+    margin: 70px 0 0 57px;
   }
   &__item-title {
     font-size: 26px;
