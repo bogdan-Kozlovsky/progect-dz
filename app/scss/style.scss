@@ -6,10 +6,11 @@
 
 // header
 .header {
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 100%;
+  &__container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -667,7 +668,7 @@
     justify-content: space-between;
   }
   &__content-address {
-    width: 191px;
+    width: 200px;
     color: $boulder;
     @extend %r-r;
     font-size: 14px;
@@ -688,6 +689,10 @@
     text-transform: uppercase;
   }
   &__content-box {
+    padding-top: 16px;
+    width: 200px;
+  }
+  &__content-account {
     padding-top: 16px;
     width: 200px;
   }
