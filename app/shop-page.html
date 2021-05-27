@@ -22,7 +22,7 @@
           </div>
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link menu__link--active" href="#">
+              <a class="menu__link" href="#">
                 Home+
               </a>
             </li>
@@ -112,173 +112,214 @@
   </header>
   <!-- main -->
   <main class="main">
-    <div class="top__inner">
-      <h2 class="top__title">
-        Terms & Conditions
-      </h2>
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs__list">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Home</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Terms & Conditions</a>
-          </li>
-        </ul>
+    <div class="top__box">
+      <div class="top__inner">
+        <h2 class="top__title">
+          Product list 1
+        </h2>
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Product list 1</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <section class="personal-information">
+    <section class="shop">
       <div class="container">
-        <div class="personal-information__types">
-          <h3 class="personal-information__title">
-            Types of Personal Information We Collect
-          </h3>
-          <ol class="personal-information__list">
-            <li class="personal-information__item">
-              Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            </li>
-            <li class="personal-information__item">
-              Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            </li>
-            <li class="personal-information__item">
-              Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </li>
-            <li class="personal-information__item">
-              Dagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat.
-            </li>
-            <li class="personal-information__item">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            </li>
-          </ol>
-        </div>
-        <div class="personal-information__box">
-          <h3 class="personal-information__subtitle">
-            How marketpmss.com Collects Personal Infonnation
-          </h3>
-          <p class="personal-information__text">
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore
-          </p>
-        </div>
-        <div class="personal-information__uses">
-          <h3 class="personal-information__subtitle">
-            How marketprosscom Uses Personal Information
-          </h3>
-          <p class="personal-information__text">
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore
-          </p>
+        <div class="shop__inner">
+          <div class="shop-filter filter">
+            <!-- filter-category -->
+            <div class="filter-category">
+              <h3 class="filter-title">
+                CATEGORY
+              </h3>
+              <form class="filter-category__form" action="#">
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__box">
+                    <span class="filter-category__text"> Chair</span>
+                    <img class="filter-category__icons" src="images/icons/shop-category-icons.svg" alt="">
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__box">
+                    <span class="filter-category__text"> Table</span>
+                    <img class="filter-category__icons" src="images/icons/shop-category-icons.svg" alt="">
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__box">
+                    <span class="filter-category__text"> Lamp</span>
+                    <img class="filter-category__icons" src="images/icons/shop-category-icons.svg" alt="">
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__box">
+                    <span class="filter-category__text"> Watch</span>
+                    <img class="filter-category__icons" src="images/icons/shop-category-icons.svg" alt="">
+                  </div>
+                </label>
+                <label class="filter-category__label">
+                  <input class="filter-category__input" type="checkbox">
+                  <div class="filter-category__box">
+                    <span class="filter-category__text"> Clock</span>
+                    <img class="filter-category__icons" src="images/icons/shop-category-icons.svg" alt="">
+                  </div>
+                </label>
+              </form>
+            </div>
+            <!-- filter-category -->
+            <!-- filter-price -->
+            <div class="filter-price">
+              <h3 class="filter-title">
+                Price
+              </h3>
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" data-min="0" data-max="1000" data-from="100.00" data-to="500.00"
+                  type="text">
+                <div class="filter-price__box">
+                  $<span class="filter-price__from"></span>
+                  $<span class="filter-price__to"></span>
+                </div>
+              </form>
+            </div>
+            <!-- filter-price -->
+            <!-- filter-brand -->
+            <div class="filter-brand">
+              <h3 class="filter-title">
+                Brand
+              </h3>
+              <form class="filter-brand__form" action="#">
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__box">
+                    <span class="filter-brand__text">
+                      RFL
+                    </span>
+                    <span class="filter-brand__text">
+                      (10)
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox" checked>
+                  <div class="filter-brand__box">
+                    <span class="filter-brand__text">
+                      Brothers
+                    </span>
+                    <span class="filter-brand__text">
+                      (23)
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__box">
+                    <span class="filter-brand__text">
+                      Regal
+                    </span>
+                    <span class="filter-brand__text">
+                      (3)
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__box">
+                    <span class="filter-brand__text">
+                      Nadia
+                    </span>
+                    <span class="filter-brand__text">
+                      (14)
+                    </span>
+                  </div>
+                </label>
+                <label class="filter-brand__label">
+                  <input class="filter-brand__input" type="checkbox">
+                  <div class="filter-brand__box">
+                    <span class="filter-brand__text">
+                      Otobi
+                    </span>
+                    <span class="filter-brand__text">
+                      (6)
+                    </span>
+                  </div>
+                </label>
+              </form>
+            </div>
+            <!-- filter-brand -->
+            <!-- filter-products -->
+            <div class="filter-products">
+              <h3 class="filter-title">
+                RECENT PRODUCTS
+              </h3>
+              <!-- 1 -->
+              <div class="filter-products__inner">
+                <a class="filter-products__item" href="#">
+                  <div class="filter-products__imgbox">
+                    <img class="filter-products__img" src="images/filter-products/filter-products-1.png" alt="
+                    настольна лампа">
+                  </div>
+                  <div class="filter-products__content">
+                    <h4 class="filter-products__subtitle">
+                      Pendant lamp
+                    </h4>
+                    <div class="filter-products__stars" data-rateyo-rating='3'></div>
+                    <span class="filter-products__price">
+                      23$
+                    </span>
+                  </div>
+                </a>
+                <!-- 1 -->
+                <!-- 2 -->
+                <a class="filter-products__item" href="#">
+                  <div class="filter-products__imgbox">
+                    <img class="filter-products__img" src="images/filter-products/filter-products-2.png"
+                      alt="настольна лампа">
+                  </div>
+                  <div class="filter-products__content">
+                    <h4 class="filter-products__subtitle">
+                      Pendant lamp
+                    </h4>
+                    <div class="filter-products__stars" data-rateyo-rating='4'></div>
+                    <span class="filter-products__price">
+                      23$
+                    </span>
+                  </div>
+                </a>
+                <!-- 2 -->
+                <!-- 3 -->
+                <a class="filter-products__item" href="#">
+                  <div class="filter-products__imgbox">
+                    <img class="filter-products__img" src="images/filter-products/filter-products-3.png" alt="
+                    настольна лампа">
+                  </div>
+                  <div class="filter-products__content">
+                    <h4 class="filter-products__subtitle">
+                      Pendant lamp
+                    </h4>
+                    <div class="filter-products__stars" data-rateyo-rating='5'></div>
+                    <span class="filter-products__price">
+                      23$
+                    </span>
+                  </div>
+                </a>
+                <!-- 3 -->
+              </div>
+            </div>
+            <!-- filter-products -->
+          </div>
         </div>
       </div>
     </section>
-    <!-- articles -->
-    <section class="articles">
-      <div class="container">
-        <div class="articles__inner">
-          <h2 class="articles__title title">
-            Our Insights & Articles
-          </h2>
-          <a class="articles__link" href="#">
-            View All
-          </a>
-        </div>
-        <ul class="articles__items">
-          <!-- 1 -->
-          <li class="articles__item">
-            <img class="articles__item-img" src="images/articles-img-1.jpg" alt="фото кімнати">
-            <a class="articles__item-link" href="#">
-              NEWS
-            </a>
-            <div class="articles__item-content">
-              <a class="articles__item-text" href="#">
-                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-              </a>
-              <div class="articles__item-box">
-                <span class="articles__item-box-date">
-                  28 JANUARY, 2020
-                </span>
-                <a class="articles__item-box-admin" href="#">
-                  BY ADMIN
-                </a>
-              </div>
-            </div>
-          </li>
-          <!-- 1 -->
-          <!-- 2 -->
-          <li class="articles__item">
-            <img class="articles__item-img" src="images/articles-img-2.jpg" alt="фото кімнати">
-            <a class="articles__item-link" href="#">
-              NEWS
-            </a>
-            <div class="articles__item-content">
-              <a class="articles__item-text" href="#">
-                Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              </a>
-              <div class="articles__item-box">
-                <span class="articles__item-box-date">
-                  28 JANUARY, 2020
-                </span>
-                <a class="articles__item-box-admin" href="#">
-                  BY ADMIN
-                </a>
-              </div>
-            </div>
-          </li>
-          <!-- 2 -->
-          <!-- 3 -->
-          <li class="articles__item">
-            <img class="articles__item-img" src="images/articles-img-3.jpg" alt="фото кімнати">
-            <a class="articles__item-link" href="#">
-              NEWS
-            </a>
-            <div class="articles__item-content">
-              <a class="articles__item-text" href="#">
-                Rncididunt ut labore et dolore magna aliqua. Ut enim
-              </a>
-              <div class="articles__item-box">
-                <span class="articles__item-box-date">
-                  28 JANUARY, 2020
-                </span>
-                <a class="articles__item-box-admin" href="#">
-                  BY ADMIN
-                </a>
-              </div>
-            </div>
-          </li>
-          <!-- 3 -->
-        </ul>
-      </div>
-    </section>
-    <!-- articles -->
-    <!-- partners -->
-    <div class="partners">
-      <div class="container">
-        <ul class="partners__items">
-          <li class="partners__item">
-            <img class="partners__img" src="images/partners/partners-1.png" alt="кресла">
-          </li>
-          <li class="partners__item">
-            <img class="partners__img" src="images/partners/partners-2.png" alt="кресла">
-          </li>
-          <li class="partners__item">
-            <img class="partners__img" src="images/partners/partners-3.png" alt="кресла">
-          </li>
-          <li class="partners__item">
-            <img class="partners__img" src="images/partners/partners-4.png" alt="кресла">
-          </li>
-          <li class="partners__item">
-            <img class="partners__img" src="images/partners/partners-5.png" alt="кресла">
-          </li>
-        </ul>
-      </div>
-    </div>
   </main>
   <!-- main -->
   <!-- footer -->
@@ -333,7 +374,7 @@
                 </a>
               </li>
               <li class="footer__content-item">
-                <a class="footer__content-link footer--active" href="#">
+                <a class="footer__content-link" href="#">
                   Terms & Condition
                 </a>
               </li>
@@ -390,7 +431,7 @@
           </p>
           <ul class="footer__copy-breadcrumbs">
             <li class="footer__copy-item">
-              <a class="footer__copy-link " href="#">
+              <a class="footer__copy-link footer__copy-link--active" href="#">
                 Home
               </a>
             </li>
