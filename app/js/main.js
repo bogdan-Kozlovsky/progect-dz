@@ -16,7 +16,7 @@ $(function () {
   });
   // tabs
   // стилизация инпутов
-  $('input, select').styler();
+  $('.pendant__content-input').styler();
   // стилизация инпутов
   // параметри кнопок
   $('.shop-content__btn').on('click', function () {

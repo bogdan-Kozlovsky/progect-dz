@@ -271,6 +271,9 @@
 // products
 .products {
   padding: 74px 0 217px;
+  &-list__size {
+    margin-bottom: 30px;
+  }
   &__title {
     text-align: center;
     margin-bottom: 29px;
@@ -1290,6 +1293,11 @@
       margin-bottom: 40px;
     }
   }
+  &-pagination {
+    padding: 110px 0 120px;
+    display: flex;
+    justify-content: center;
+  }
 }
 // shop
 // filter
@@ -1317,15 +1325,10 @@
     margin-bottom: 49px;
   }
   &-category__input {
-    // @extend %checkbox;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    position: absolute;
-    cursor: pointer;
+    @extend %checkbox;
+
     &:checked + .filter-category__box {
-      background-color: rgba(#a3bbc8, 0.2);
+      background-color: rgba(#000, 0.2);
     }
   }
   &-category__box {
@@ -1366,15 +1369,8 @@
     margin-bottom: 43px;
   }
   &-brand__input {
-    // @extend %checkbox;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    position: absolute;
-    cursor: pointer;
+    @extend %checkbox;
     &:checked + .filter-brand__box {
-      position: absolute;
       background-color: rgba(#a3bbc8, 0.2);
       border-radius: 5px;
     }
@@ -1824,6 +1820,7 @@
     border-radius: 5px;
     border: 1px solid rgba(#a3bbc8, 0.4);
     background-color: transparent;
+    padding: 0 20px;
   }
 
   &__navigation-btn {
