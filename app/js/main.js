@@ -60,6 +60,22 @@ $(function () {
   });
   // ползунок
   // слайдер
+  $('.pendant__slider-carts').slick({
+    asNavFor: '.pendant__slider-big',
+    arrows: false,
+    vertical: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    draggable: false,
+  });
+  $('.pendant__slider-big').slick({
+    asNavFor: '.pendant__slider-carts',
+    arrows: false,
+    draggable: false,
+    fade: true
+  });
+
   $('.top__slider-inner').slick({
     arrows: false,
     dots: true,
@@ -77,14 +93,15 @@ $(function () {
     arrows: false,
     vertical: true,
     slidesToShow: 3,
-    focusOnSelect: true,
     slidesToScroll: 1,
+    focusOnSelect: true,
     draggable: false,
   });
   $('.pendant__slider-big').slick({
     asNavFor: '.pendant__slider-carts',
     arrows: false,
     draggable: false,
+    fade: true
   });
   // слайдер
   // микситаб
