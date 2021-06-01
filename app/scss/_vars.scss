@@ -43,6 +43,13 @@ $dianne: #243f4d;
 $mine: #262626;
 $comet: #565872;
 
+%checkbox {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
