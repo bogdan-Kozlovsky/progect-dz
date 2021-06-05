@@ -1517,6 +1517,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 47px;
   }
   &__slider {
     width: 550px;
@@ -1691,7 +1692,7 @@
 // pendant
 // tabs
 .tabs {
-  margin-bottom: 128px;
+  margin-bottom: 123px;
   color: $dianne;
   &-list {
     display: flex;
