@@ -133,10 +133,6 @@
     @extend %r-m;
     color: $blue;
   }
-  &__link--active {
-    text-decoration: underline;
-    color: #000;
-  }
 }
 .top__slider {
   background-image: url(../images/slider__top-bg.jpg);
@@ -226,7 +222,8 @@
 .advantages {
   background-color: rgba(#fcd7b6, 0.2);
   &-container {
-    max-width: 1500px;
+    max-width: 1800px;
+    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
   }
@@ -634,6 +631,7 @@
   &__items {
     display: flex;
     justify-content: space-between;
+    padding-left: 0;
   }
   &__item {
     width: 370px;
@@ -721,14 +719,19 @@
 // partners
 .partners {
   background-color: rgba(#fcd7b6, 0.2);
-  margin-bottom: 79px;
+  margin-bottom: 68px;
+  &__container {
+    max-width: 1940px;
+    width: 100%;
+    padding: 0 10px;
+  }
   &__items {
-    padding: 0;
-    min-height: 437px;
+    padding-top: 264px;
     margin-top: -215px;
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
+    padding-left: 0;
   }
   &__item {
     padding-bottom: 90px;
@@ -745,6 +748,9 @@
     display: flex;
     justify-content: space-between;
   }
+  &__content-list {
+    padding-left: 0;
+  }
   &__content-address {
     width: 200px;
     color: $boulder;
@@ -752,7 +758,7 @@
     font-size: 14px;
   }
   &__content-address__name {
-    padding: 21px 0 7px;
+    padding: 14px 0 7px;
     line-height: 1.71;
   }
   &__content-address__phone {
@@ -775,7 +781,7 @@
     width: 200px;
   }
   &__content-title {
-    margin-bottom: 21px;
+    margin-bottom: 14px;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 1.31;
@@ -792,7 +798,7 @@
   }
   &__content-text {
     color: $boulder;
-    padding-bottom: 32px;
+    padding-bottom: 26px;
     width: 240px;
   }
   &__content-input {
@@ -851,14 +857,8 @@
     color: $boulder;
   }
 }
-.footer--active {
-  text-decoration: underline;
-  @extend %r-m;
-  color: #000;
-}
 // top
 .top {
-  padding-bottom: 50px;
   &__inner {
     background-color: rgba(#a3bbc8, 0.2);
     padding: 35px 0;
@@ -895,10 +895,6 @@
     @extend %r-r;
     line-height: 1.71;
     color: rgba(34, 41, 51, 0.6);
-  }
-  &__link--active {
-    @extend %r-m;
-    color: #000;
   }
 }
 // breadcrumbs
@@ -973,11 +969,11 @@
   background-color: rgba(#fcd7b6, 0.2);
   padding: 82px 0 92px;
   margin-bottom: 60px;
-  // min-height: 251px;
   &__inner {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
+    padding-left: 0;
   }
 }
 // modal
@@ -1462,23 +1458,29 @@
   margin: 94px 0 140px;
   &__items {
     display: flex;
+    padding-left: 0;
   }
   &__item {
     border: solid 1px #a3bbc8;
     background-color: #fff;
     transition: all 0.5s;
+    width: 50px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     & + .pagination__item {
       margin-left: 16px;
     }
-    &:hover {
-      background-color: #a3bbc8;
-      .pagination__link {
-        color: #fff;
-      }
+  }
+  &__item--active {
+    background-color: #a3bbc8;
+    .pagination__link {
+      color: $white;
     }
   }
   &__link {
-    padding: 20px 19px;
+    // padding: 20px 19px;
     font-size: 16px;
     @extend %r-r;
     color: $dianne;
@@ -1847,7 +1849,8 @@
   }
   &-partners {
     background-color: rgba(#fcd7b6, 0.2);
-    padding: 82px 0 92px;
+    padding: 82px 0 73px;
+    margin-bottom: 37px;
   }
 }
 // blog
@@ -1980,7 +1983,7 @@
     width: 297px;
     height: 50px;
     background-color: rgba(#f5f5f5, 0.5);
-    padding: 0 20px;
+    padding: 0 55px 0 20px;
     border: none;
     &::placeholder {
       font-size: 16px;
@@ -2005,7 +2008,7 @@
     width: 100%;
     height: 175px;
     margin: 20px 0 20px;
-    padding: 20px;
+    padding: 20px 55px 20px 20px;
     border: none;
     &::placeholder {
       font-size: 16px;
@@ -2036,7 +2039,7 @@
       content: "";
       position: absolute;
       width: 18px;
-      height: 12px;
+      height: 13px;
       top: 20px;
       right: 26px;
       background-image: url(../images/icons/input-icons.svg);
@@ -2082,7 +2085,7 @@
     background-color: rgba(#a3bbc8, 0.2);
     padding: 25px 0 24px 40px;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 26px;
     &::before {
       content: "";
       position: absolute;
@@ -2113,7 +2116,7 @@
     }
   }
   &__descr {
-    margin-bottom: 64px;
+    margin-bottom: 31px;
   }
   &__descr-inner {
     display: flex;
@@ -2143,7 +2146,7 @@
     padding: 24px 0;
     border-bottom: 2px solid #ebebeb;
     border-top: 2px solid #ebebeb;
-    margin-bottom: 26px;
+    margin-bottom: 59px;
   }
   &__designer__inner {
     display: flex;
@@ -2279,7 +2282,7 @@
       content: "";
       position: absolute;
       width: 18px;
-      height: 13px;
+      height: 12px;
       background-image: url(../images/icons/input-icons.svg);
       top: 20px;
       right: 18px;
