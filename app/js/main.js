@@ -1,4 +1,19 @@
 $(function () {
+  $('.filter__btn').click(function () {
+    $('.blog__navigation').toggleClass("active");
+    $('.filter__btn').toggleClass("active");
+  });
+  $('.shop-content__filter-icons').click(function () {
+    $('.shop-filter').toggleClass("active");
+    $('.shop-content__filter-icons').toggleClass("active");
+  });
+  // filter
+  // адаптивний бургер
+  $('.burger, .menu a').click(function () {
+    $('.menu__list').toggleClass("active");
+    $('.burger').toggleClass("active");
+  });
+  // адаптивний бургер
   // tabs
   var tab = $('#tabs .tabs-items > div');
   tab.hide().filter(':first').show();
@@ -25,9 +40,12 @@ $(function () {
   });
   $('.button-list').on('click', function () {
     $('.products__item').addClass('products__item--list');
+    $('.shop-content__inner').addClass('shop-content__nogrid');
+
   });
   $('.button-grid').on('click', function () {
     $('.products__item').removeClass('products__item--list');
+    $('.shop-content__inner').removeClass('shop-content__nogrid');
   });
   // параметри кнопок
   // звездний рейтинг
@@ -87,6 +105,26 @@ $(function () {
     prevArrow: '<button type="button" class="slick-left slick-btn"><img src="images/icons/arrows-left.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-right slick-btn"><img src="images/icons/arrows-right2.svg" alt=""></button>',
     infinite: false,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
   });
   $('.pendant__slider-carts').slick({
     asNavFor: '.pendant__slider-big',
@@ -108,11 +146,6 @@ $(function () {
   var mixer = mixitup('.products__items');
   var mixer = mixitup('.new-design__list');
   // микситаб
-  // адаптивний бургер
-  $('.burger, .menu a').click(function () {
-    $('.menu__list').toggleClass("active");
-    $('.burger').toggleClass("active");
-  });
-  // адаптивний бургер
+
 
 });
